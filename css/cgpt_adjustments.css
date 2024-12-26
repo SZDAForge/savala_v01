@@ -1,0 +1,105 @@
+
+.quantity {
+    display: flex; 
+    align-items: center; 
+}
+
+.quantity button, .quantity input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.quantity input[type="number"] {
+    width: 3em; 
+    text-align: center;
+    padding: 0 2px; 
+    box-sizing: border-box;
+}
+
+.quantity .add-to-cart {
+    margin-left: 10px;
+}
+
+.cart-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.card.custom-card-bg {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card-header-title {
+    font-size: 1.25em;
+    color: #333;
+}
+
+.icon .fas {
+    color: #333;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-container {
+    width: 25%; /* Assuming product tiles take 25% width each in a 4-tile grid */
+    margin: 20px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card.custom-card-bg {
+    height: auto;
+    min-height: 200px; /* Minimum height for the cart */
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-btn-container {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.checkout-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #555;
+}
+
+.increment, .decrement {
+    position: relative;
+    z-index: 10;  /* This ensures the buttons remain above other content */
+    transition: none !important;  /* This ensures no animations are applied */
+}
+
+
+
+
+
+li.product:hover, 
+li.product:hover * { /* The * selects all child elements within li.product on hover */
+    transform: none !important;
+    transition: none !important;
+}
+

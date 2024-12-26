@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Moschino | Minimalist Free HTML Portfolio by WowThemes.net</title>
+<link href="css/woocommerce-layout.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="css/woocommerce-smallscreen.css" media="only screen and (max-width: 768px)" rel="stylesheet" type="text/css"/>
+<link href="css/woocommerce.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700" media="all" rel="stylesheet" type="text/css"/>
+<link href="css/easy-responsive-shortcodes.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="css/cgpt_adjustments.css" rel="stylesheet"/>
+<style>
+    #cart-sidebar {
+        float: right;
+        width: 30%; /* You can adjust this width based on your design preference */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .cart-container {
+        background-color: #f9f9f9; /* Light background for the cart */
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .cart-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .cart-products-list {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .cart-actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .cart-actions button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #333;
+        color: #fff;
+        transition: background-color 0.3s;
+    }
+
+    .cart-actions button:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page">
+<div id="page">
+<div class="container">
+<header class="site-header" id="masthead">
+<div class="site-branding">
+<h1 class="site-title"><a href="index.html" rel="home">Moschino</a></h1>
+<h2 class="site-description">Minimalist Portfolio HTML Template</h2>
+</div>
+<nav class="main-navigation" id="site-navigation">
+<button class="menu-toggle">Menu</button>
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div class="menu-menu-1-container">
+<ul class="menu" id="menu-menu-1">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="elements.html">Elements</a></li>
+<li><a href="#">Pages</a>
+<ul class="sub-menu">
+<li><a href="portfolio-item.html">Portfolio Item</a></li>
+<li><a href="blog-single.html">Blog Article</a></li>
+<li><a href="shop-single.html">Shop Item</a></li>
+<li><a href="portfolio-category.html">Portfolio Category</a></li>
+</ul>
+</li>
+<li><a href="contact.html">Contact</a></li>
+<form class="woocommerce-ordering" method="get">
+<select class="orderby" name="orderby">
+<option selected="selected" value="menu_order">Default sorting</option>
+<option value="popularity">Sort by popularity</option>
+<option value="rating">Sort by average rating</option>
+<option value="date">Sort by newness</option>
+<option value="price">Sort by price: low to high</option>
+<option value="price-desc">Sort by price: high to low</option>
+</select>
+</form>
+</ul>
+</div>
+</nav>
+</header>
+<!-- #masthead -->
+<div class="site-content" id="content">
+<div class="content-area column full" id="primary">
+<main class="site-main" id="main" role="main">
+<p class="woocommerce-result-count">
+					 Showing 1–8 of 12 results
+				</p>
+<ul class="products">
+<li class="first product">
+<a href="shop-single.html">
+<span class="onsale">Sale!</span>
+<img alt="" src="kep01.png"/>
+<h3>Cool Fedora</h3>
+<span class="price"><span class="amount">$34.00</span></span>
+<div class="quantity">
+<button class="decrement" onclick="decrement(event);">-</button>
+<input class="quantity-input" min="1" readonly="" style="color: black; background-color: white;" type="number" value="1"/>
+<button class="increment" onclick="increment(event);">+</button>
+<button class="add-to-cart" onclick="addToCart(event)">ADD</button>
+</div>
+</a>
+</li>
+<li class="product">
+<a href="shop-single.html">
+<img alt="" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j10-520x780-520x600.jpg"/>
+<h3>Beige Blouse</h3>
+<span class="price"><span class="amount">$66.00</span></span>
+</a><a class="button" href="#">Add to cart</a>
+</li>
+<li class="product">
+</li>
+<li class="product">
+<a href="shop-single.html">
+<img alt="" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j1-520x780-520x600.jpg"/>
+<h3>Black Jacket</h3>
+<span class="price"><span class="amount">$125.00</span></span>
+</a><a class="button" href="#">Add to cart</a>
+</li>
+<li class="shopping-cart">
+<div class="shopping-cart-container" style="border: 1px solid black; padding: 10px; border-radius: 5px; box-sizing: border-box; display: inline-block;">
+<a href="#">
+<img alt="Shopping Cart Image" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j9-520x780-520x600.jpg"/>
+<h3>SHOPPING CART</h3>
+<div class="cart-details">
+<span class="items-count">0 Items</span>
+<span class="total-price">$0.00</span>
+</div>
+</a>
+<ul id="cart-items"></ul><p id="total-price"></p><a class="button clear-cart" href="#">Clear All</a>
+<a class="button checkout" href="#">CHECKOUT</a>
+</div>
+</li>
+<li class="first product">
+<a href="shop-single.html">
+<img alt="" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j12-520x668-520x600.jpg"/>
+<h3>Gray Blouse</h3>
+<span class="price"><span class="amount">$15.00</span></span>
+</a><a class="button" href="#">Add to cart</a>
+</li>
+<li class="product">
+<a href="shop-single.html">
+<img alt="" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/f11-520x755-520x600.jpg"/>
+<h3>Male Bag</h3>
+<span class="price"><span class="amount">$16.00</span></span>
+</a><a class="button" href="#">Add to cart</a>
+</li>
+<li class="product">
+<a href="shop-single.html">
+<img alt="" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j6-520x779-520x600.jpg"/>
+<h3>Hugo Jeans</h3>
+<span class="price"><span class="amount">$36.00</span></span>
+</a><a class="button" href="#">Add to cart</a>
+</li>
+<li class="last product">
+<a href="shop-single.html">
+<img alt="" src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j2-520x780-520x600.jpg"/>
+<h3>Male T-Shirt</h3>
+<span class="price"><span class="amount">$49.00</span></span>
+</a><a class="button" href="#">Add to cart</a>
+</li>
+</ul>
+<nav class="woocommerce-pagination">
+<ul class="page-numbers">
+<li><span class="page-numbers current">1</span></li>
+<li><a class="page-numbers" href="#">2</a></li>
+<li><a class="next page-numbers" href="#">→</a></li>
+</ul>
+</nav>
+</main>
+<!-- #main -->
+</div>
+<!-- #primary -->
+</div>
+<!-- #content -->
+</div>
+<!-- .container -->
+<footer class="site-footer" id="colophon">
+<div class="container">
+<div class="site-info">
+<h1 style="font-family: 'Herr Von Muellerhoff';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px;">Moschino</h1>
+<a href="https://www.wowthemes.net/" target="blank">© Moschino - Free HTML Template by WowThemes.net</a>
+</div>
+</div>
+</footer>
+<a class="smoothup" href="#top" title="Back to top"><span class="genericon genericon-collapse"></span></a>
+</div>
+<!-- #page -->
+<script src="js/jquery.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+</body>
+</html>
+<script>
+var cartItems = [];
+
+
+    function incrementQuantity(event) {
+        event.preventDefault();
+        var button = event.target;
+        var quantityContainer = button.parentElement;
+        var quantityInput = quantityContainer.querySelector('.quantity-input');
+        quantityInput.value = parseInt(quantityInput.value, 10) + 1;
+    }
+
+    function decrementQuantity(event) {
+        event.preventDefault();
+        var button = event.target;
+        var quantityContainer = button.parentElement;
+        var quantityInput = quantityContainer.querySelector('.quantity-input');
+        var currentQuantity = parseInt(quantityInput.value, 10);
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    }
+
+    function resetQuantity(quantityInput) {
+        quantityInput.value = 1;
+    }
+
+    function addToCart(event) {
+        event.preventDefault();
+        alert('Product added to cart!');
+		// Get product details
+		var button = event.target;
+    var productContainer = button.closest('.product');
+    var productName = productContainer.querySelector('h3').innerText;
+    var productPrice = parseFloat(productContainer.querySelector('.amount').innerText.replace('$', ''));
+    var quantityInput = productContainer.querySelector('.quantity-input');
+    var quantity = parseInt(quantityInput.value, 10);
+    
+    // Check if product is already in cart
+    var existingItem = cartItems.find(item => item.name === productName);
+    if (existingItem) {
+        existingItem.quantity += quantity;
+        existingItem.totalPrice = existingItem.quantity * productPrice;
+    } else {
+        var newItem = {
+            name: productName,
+            quantity: quantity,
+            totalPrice: productPrice * quantity
+        };
+        cartItems.push(newItem);
+    }
+    
+    updateCart();
+    }
+
+    function updateCart() {
+    var cartItemsElement = document.getElementById("cart-items");
+    cartItemsElement.innerHTML = "";
+
+    var sum = 0; // Variable to store the sum of total prices
+
+    cartItems.forEach(item => {
+        var listItem = document.createElement("li");
+
+        cartItemsElement.appendChild(listItem);
+
+        sum += item.totalPrice; // Add the total price of each item to the sum
+    });
+
+    // Update the total price element with the sum
+    document.getElementById("total-price").innerText = "ÖSSZESEN: " + sum;
+
+    // Create a table element
+    var table = document.createElement("table");
+
+    // Create table header
+    var thead = document.createElement("thead");
+    var headerRow = document.createElement("tr");
+
+    var nameHeader = document.createElement("th");
+    nameHeader.innerText = "NÉV";
+    headerRow.appendChild(nameHeader);
+
+    var quantityHeader = document.createElement("th");
+    quantityHeader.innerText = "DB";
+    headerRow.appendChild(quantityHeader);
+
+    var totalPriceHeader = document.createElement("th");
+    totalPriceHeader.innerText = "ÖSSZ ÁR";
+    headerRow.appendChild(totalPriceHeader);
+
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Create table body
+    var tbody = document.createElement("tbody");
+
+    cartItems.forEach(item => {
+        var row = document.createElement("tr");
+
+        var nameCell = document.createElement("td");
+        nameCell.innerText = item.name;
+        row.appendChild(nameCell);
+
+        var quantityCell = document.createElement("td");
+        quantityCell.innerText = item.quantity;
+        row.appendChild(quantityCell);
+
+        var totalPriceCell = document.createElement("td");
+        totalPriceCell.innerText = item.totalPrice + " Ft";
+        row.appendChild(totalPriceCell);
+
+        tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    cartItemsElement.appendChild(table);
+}
+
+	
+</script>
